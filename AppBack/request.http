@@ -1,0 +1,23 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Juan",
+    "lastname": "Mendez",
+    "age": "78",
+    "email": "juan.mz@gmail.com"
+}
+
+
+###
+POST http://localhost:9000/api/goals HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTU4NTEwMTJ9.SWD-YvkWZHlR565bxY2dAlHHYYRuQWPpIbKiSRjGnoM
+
+{
+    "name": "CARRO",
+    "target": 5000000,
+    "deadline": "2024-12-11",
+    "createdBy": "650cf486011ab8490c8ac4c9"
+}
